@@ -37,3 +37,7 @@ function nextChapter() {
 window.onload = () => {
   loadChapter(currentChapter);
 };
+
+
+// Load initial chapter (e.g., Chapter 10)
+loadChapter(10);
