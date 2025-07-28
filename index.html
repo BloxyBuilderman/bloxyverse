@@ -117,3 +117,27 @@
   </script>
 </body>
 </html>
+
+
+
+<audio id="bg-music" src="music/_Darkside_ - Original Minecraft Animation(MP3_160K).mp3" autoplay loop></audio>
+
+<button id="mute-btn">🔊</button>
+
+<script>
+  const bgMusic = document.getElementById('bg-music');
+  const muteBtn = document.getElementById('mute-btn');
+
+  // Allow user to mute/unmute
+  muteBtn.addEventListener('click', () => {
+    bgMusic.muted = !bgMusic.muted;
+    muteBtn.textContent = bgMusic.muted ? '🔇' : '🔊';
+  });
+
+  // Optional: Try to autoplay if blocked by browser
+  document.body.addEventListener('click', () => {
+    if (bgMusic.paused) {
+      bgMusic.play();
+    }
+  });
+</script>
