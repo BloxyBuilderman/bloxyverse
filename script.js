@@ -1,6 +1,16 @@
-window.addEventListener("load", () => {
-  const loader = document.getElementById("loading-screen");
-  setTimeout(() => {
-    loader.style.display = "none";
-  }, 1000);
+
+const video = document.getElementById('bg-video');
+const muteBtn = document.getElementById('mute-btn');
+
+muteBtn.addEventListener('click', () => {
+  video.muted = !video.muted;
+  muteBtn.textContent = video.muted ? '🔇' : '🔊';
 });
+
+function prevChapter() {
+  window.location.href = "chapter9.html";
+}
+
+function nextChapter() {
+  window.location.href = "chapter11.html";
+}
