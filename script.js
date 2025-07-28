@@ -14,3 +14,11 @@ function prevChapter() {
 function nextChapter() {
   window.location.href = "chapter11.html";
 }
+
+function loadChapter(chapter) {
+  fetch(`chapters/chapter${chapter}.html`)
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById('chapter-content').innerHTML = html;
+    });
+}
