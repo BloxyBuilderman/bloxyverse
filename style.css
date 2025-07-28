@@ -1,74 +1,26 @@
+
 body {
-  margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background: #0d0d0d;
-  color: #f2f2f2;
+    font-family: 'Segoe UI', sans-serif;
+    background: #0f0f0f;
+    color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
 }
-
-.container {
-  padding: 2rem;
-  text-align: center;
+.chapter {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background: #1e1e1e;
+    border-radius: 12px;
 }
-
-h1 {
-  font-size: 3rem;
-  color: #00ffff;
+.navigation {
+    margin-top: 20px;
 }
-
-.subtitle {
-  font-size: 1.25rem;
-  margin-bottom: 2rem;
-}
-
-.chapter-list {
-  list-style: none;
-  padding: 0;
-}
-
-.chapter-list li {
-  margin: 1rem 0;
-}
-
-.chapter-list a {
-  color: #00ff99;
-  text-decoration: none;
-  font-size: 1.2rem;
-}
-
-.chapter-list a:hover {
-  text-decoration: underline;
-}
-
-.fight-video {
-  width: 80%;
-  margin-top: 2rem;
-  border-radius: 16px;
-  box-shadow: 0 0 12px rgba(0, 255, 255, 0.4);
-}
-
-#loading-screen {
-  position: fixed;
-  width: 100vw;
-  height: 100vh;
-  background: #000;
-  z-index: 9999;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-.spinner {
-  width: 60px;
-  height: 60px;
-  border: 6px solid #ccc;
-  border-top-color: #00ffff;
-  border-radius: 50%;
-  animation: spin 1s linear infinite;
-}
-
-@keyframes spin {
-  to {
-    transform: rotate(360deg);
-  }
+.navigation a {
+    background: #6200ea;
+    color: white;
+    padding: 10px 15px;
+    margin: 0 5px;
+    border-radius: 8px;
+    text-decoration: none;
 }
