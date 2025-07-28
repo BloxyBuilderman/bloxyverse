@@ -1,5 +1,5 @@
 console.log("Loading script started...");
 setTimeout(() => {
   console.log("Redirecting...");
-  window.location.href = "chapter1.html";
+  window.location.href = "index.html";
 }, 5000);
